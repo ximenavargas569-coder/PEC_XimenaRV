@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Actividades</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<script src="funciones.js"></script>
+</body>
+</html>
+ 
+<!-- Botón de modo noche -->
+<button id="boton-tema" class="boton-flotante"
+        onclick="cambiarTema()" title="Cambiar modo">
+    🌙
+</button>
+
+<!-- Botón para volver arriba -->
+<button id="volver-arriba" class="boton-volver"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        title="Volver arriba">
+    ↑
+</button>
+
+<script src="funciones.js"></script>
+
+
+<body>
+
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <div class="contenedor">
+
+            <h1>
+                Redes de Bienestar
+            </h1>
+
+            <p class="subtitulo">
+                Tejiendo por la salud mental y el éxito escolar
+            </p>
+
+
+            <nav>
+
+                <a href="index.html">
+                    Inicio
+                </a>
+                
+
+                <a href="bienestar.html">
+                    Bienestar
+                </a>
+
+                <a href="actividades.html"
+                   class="activo">
+                    Actividades
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- CONTENIDO -->
+
+    <main class="contenedor">
+
+
+        <section class="encabezado-pagina">
+
+            <p class="etiqueta">
+                PROPUESTAS
+            </p>
+
+            <h2>
+                Pequeñas acciones, grandes cambios
+            </h2>
+
+            <p>
+                Estas actividades pueden realizarse dentro
+                de la escuela para promover la convivencia,
+                el apoyo entre compañeros y el bienestar.
+            </p>
+
+        </section>
+
+
+
+        <!-- ACTIVIDADES -->
+
+        <section class="actividades-grid">
+
+
+            <div class="actividad">
+
+                <div class="numero">
+                    1
+                </div>
+
+                <h3>
+                    Muro de mensajes positivos
+                </h3>
+
+                <p>
+                    Colocar notas con frases de ánimo,
+                    agradecimientos o mensajes positivos
+                    para otros estudiantes.
+                </p>
+
+            </div>
+
+
+
+            <div class="actividad">
+
+                <div class="numero">
+                    2
+                </div>
+
+                <h3>
+                    Rincón de descanso
+                </h3>
+
+                <p>
+                    Crear un pequeño espacio tranquilo
+                    donde los estudiantes puedan tomar
+                    unos minutos para respirar y relajarse.
+                </p>
+
+            </div>
+
+
+
+            <div class="actividad">
+
+                <div class="numero">
+                    3
+                </div>
+
+                <h3>
+                    Campaña de información
+                </h3>
+
+                <p>
+                    Compartir carteles y publicaciones
+                    con información sencilla sobre
+                    bienestar y formas de pedir apoyo.
+                </p>
+
+            </div>
+
+
+
+            <div class="actividad">
+
+                <div class="numero">
+                    4
+                </div>
+
+                <h3>
+                    Dinámica de integración
+                </h3>
+
+                <p>
+                    Realizar actividades en equipo para
+                    mejorar la convivencia y evitar que
+                    alguien se sienta excluido.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- GALERÍA -->
+
+        <section class="galeria">
+
+            <h2>
+                Galería del proyecto
+            </h2>
+
+
+            <div class="galeria-grid">
+
+
+                <div class="foto">
+
+                    <img src="img/actividadescolar.webp"
+                         alt="Actividad del proyecto">
+
+                </div>
+
+
+
+                <div class="foto">
+
+                    <img src="img/proyecto de vida.jpg"
+                         alt="Actividad escolar">
+
+                </div>
+
+
+
+                <div class="foto">
+
+                    <img src="img/participacionestudiantil.jpg"
+                         alt="Participación de estudiantes">
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PASOS -->
+
+        <section class="pasos">
+
+            <h2>
+                ¿Cómo podemos participar?
+            </h2>
+
+
+            <ol>
+
+                <li>
+                    Escuchar y respetar a nuestros compañeros.
+                </li>
+
+                <li>
+                    Participar en las actividades del proyecto.
+                </li>
+
+                <li>
+                    Informar a un adulto de confianza
+                    cuando alguien necesite apoyo.
+                </li>
+
+                <li>
+                    Promover un ambiente escolar
+                    seguro y respetuoso.
+                </li>
+
+            </ol>
+
+        </section>
+
+
+    </main>
+
+
+    <section class="videos-bienestar">
+        <h2>🎬 Videos para cuidar tu bienestar</h2>
+        <p>Aprende, reflexiona y descubre nuevas formas de cuidar de ti.</p>
+    
+        <div class="videos-grid">
+    
+            <article class="video-card">
+                <a href="https://www.youtube.com/watch?v=JQr6Ld8d-f8"
+                   target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="https://img.youtube.com/vi/JQr6Ld8d-f8/hqdefault.jpg"
+                        alt="Portada del video Cuida tu salud mental">
+                    <span class="icono-play">▶</span>
+                </a>
+                <h3>Cuida tu salud mental</h3>
+                <p>Consejos para darle importancia a tu bienestar emocional.</p>
+            </article>
+    
+            <article class="video-card">
+                <a href="https://www.youtube.com/watch?v=qBZSlGo4N1k"
+                   target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="https://img.youtube.com/vi/qBZSlGo4N1k/hqdefault.jpg"
+                        alt="Portada del video Conoce tus emociones">
+                    <span class="icono-play">▶</span>
+                </a>
+                <h3>Conoce tus emociones</h3>
+                <p>Reconoce lo que sientes y aprende a expresarlo.</p>
+            </article>
+    
+            <article class="video-card">
+                <a href="https://www.youtube.com/watch?v=_a7wM-bQbAE"
+                   target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="https://img.youtube.com/vi/_a7wM-bQbAE/hqdefault.jpg"
+                        alt="Portada del video Hábitos saludables">
+                    <span class="icono-play">▶</span>
+                </a>
+                <h3>Hábitos saludables</h3>
+                <p>Pequeñas acciones que puedes incorporar a tu rutina.</p>
+            </article>
+    
+        </div>
+    </section>
+
+
+<section class="actividad-extra">
+    <h2>🧩 ¿Qué me puede ayudar?</h2>
+    <p>Elige una opción que pueda ayudarte cuando sientas cada emoción.</p>
+
+    <div class="pregunta-actividad">
+        <label for="emocion1">😰 Cuando siento estrés:</label>
+        <select id="emocion1">
+            <option value="">Elige una respuesta</option>
+            <option value="respirar">Respirar con calma</option>
+            <option value="ignorar">Ignorar todo lo que siento</option>
+        </select>
+    </div>
+
+    <div class="pregunta-actividad">
+        <label for="emocion2">😢 Cuando estoy triste:</label>
+        <select id="emocion2">
+            <option value="">Elige una respuesta</option>
+            <option value="aislarme">Alejarme de todos</option>
+            <option value="hablar">Hablar con alguien de confianza</option>
+        </select>
+    </div>
+
+    <button class="boton" onclick="revisarEmociones()">Revisar respuestas</button>
+    <p id="resultado-emociones"></p>
+</section>
+
+<section class="actividad-extra">
+    <h2>🎯 Mi meta de bienestar</h2>
+    <p>Escribe una pequeña meta que quieras cumplir esta semana.</p>
+
+    <input type="text" id="meta-semanal"
+        placeholder="Ej. Dormir más temprano">
+
+    <button class="boton" onclick="guardarMeta()">Crear mi meta</button>
+
+    <p id="mostrar-meta"></p>
+</section>
+
+<section class="actividad-extra">
+    <h2>🌟 ¡Elige una actividad!</h2>
+    <p>Presiona el botón para descubrir una idea para cuidar tu bienestar.</p>
+
+    <div id="actividad-sorpresa">
+        ✨ ¿Qué harás hoy por ti?
+    </div>
+
+    <button class="boton" onclick="elegirActividad()">
+        Descubrir actividad
+    </button>
+</section>
+
+<section class="herramienta">
+    <h2>🌧️ Pausa sonora</h2>
+
+    <p>
+        Escucha el sonido relajante de la lluvia durante tu pausa.
+        Mantén el volumen bajo y deténlo cuando quieras.
+    </p>
+
+    <audio id="sonidoLluvia" loop>
+        <source src="audio/liecio-calming-rain-257596.mp3"
+                type="audio/mpeg">
+        Tu navegador no admite audio.
+    </audio>
+
+    <button type="button" id="iniciarSonido" class="boton-extra">
+        Reproducir sonido de lluvia ♪
+    </button>
+
+    <button type="button" id="detenerSonido"
+            class="boton-extra secundario">
+        Detener sonido
+    </button>
+
+    <p id="estadoSonido" aria-live="polite">
+        El sonido está apagado.
+    </p>
+</section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 XIMENAEDEL. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+    
+
+</body>
+
+</html>

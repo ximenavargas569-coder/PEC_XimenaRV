@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Bienestar</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<!-- Botón de modo noche -->
+<button id="boton-tema" class="boton-flotante"
+        onclick="cambiarTema()" title="Cambiar modo">
+    🌙
+</button>
+
+<!-- Botón para volver arriba -->
+<button id="volver-arriba" class="boton-volver"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        title="Volver arriba">
+    ↑
+</button>
+
+<script src="funciones.js"></script>
+
+
+
+<!-- Botón de modo noche -->
+<button id="boton-tema" class="boton-flotante"
+        onclick="cambiarTema()" title="Cambiar modo">
+    🌙
+</button>
+
+<!-- Botón para volver arriba -->
+<button id="volver-arriba" class="boton-volver"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        title="Volver arriba">
+    ↑
+</button>
+
+<script src="funciones.js"></script>
+
+
+<body>
+
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <div class="contenedor">
+
+            <h1>
+                Redes de Bienestar
+            </h1>
+
+            <p class="subtitulo">
+                Tejiendo por la salud mental y el éxito escolar
+            </p>
+
+
+            <nav>
+
+                <a href="index.html">
+                    Inicio
+                </a>
+
+                <a href="bienestar.html"
+                   class="activo">
+                    Bienestar
+                </a>
+
+                <a href="actividades.html">
+                    Actividades
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- CONTENIDO -->
+
+    <main class="contenedor">
+
+
+        <section class="encabezado-pagina">
+
+            <p class="etiqueta">
+                PROBLEMÁTICA
+            </p>
+
+            <h2>
+                El bienestar de los estudiantes importa
+            </h2>
+
+            <p>
+                El estrés escolar, los problemas personales
+                y la falta de apoyo pueden afectar el ánimo,
+                la convivencia y el rendimiento académico.
+            </p>
+
+        </section>
+
+
+
+        <section class="dos-columnas">
+
+
+            <!-- INFORMACIÓN -->
+
+            <div class="contenido">
+
+                <h2>
+                    ¿Qué podemos notar?
+                </h2>
+
+
+                <div class="lista">
+
+
+                    <div>
+
+                        <span>
+                            01
+                        </span>
+
+                        <p>
+                            <strong>Cambios de ánimo:</strong>
+                            sentirse triste, preocupado o
+                            irritable durante varios días.
+                        </p>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <span>
+                            02
+                        </span>
+
+                        <p>
+                            <strong>Cansancio:</strong>
+                            tener dificultad para descansar,
+                            concentrarse o realizar actividades.
+                        </p>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <span>
+                            03
+                        </span>
+
+                        <p>
+                            <strong>Aislamiento:</strong>
+                            alejarse de personas o actividades
+                            que antes disfrutábamos.
+                        </p>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <span>
+                            04
+                        </span>
+
+                        <p>
+                            <strong>Bajo rendimiento:</strong>
+                            dificultad para realizar tareas
+                            o mantener la atención.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOTO -->
+
+            <div class="imagen grande">
+
+                <img src="img/animosescolares.jpg"
+                     alt="Estudiantes y bienestar">
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- AVISO -->
+
+        <section class="aviso">
+
+            <h3>
+                Buscar ayuda también es cuidarse
+            </h3>
+
+            <p>
+                Si una situación se siente demasiado difícil,
+                es importante hablar con una persona adulta
+                de confianza, un familiar, docente u orientador
+                escolar.
+            </p>
+
+        </section>
+
+
+
+        <!-- CONCLUSIÓN -->
+
+        <section class="seccion-suave">
+
+            <h2>
+                La red empieza con nosotros
+            </h2>
+
+            <p>
+                Escuchar sin burlas, incluir a los demás,
+                respetar los límites y preguntar cómo está
+                alguien son acciones sencillas que pueden
+                hacer una diferencia dentro de la escuela.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+<!-- QUIZ DE BIENESTAR -->
+
+<section class="quiz-bienestar">
+
+    <div class="quiz-encabezado">
+        <p class="etiqueta">PON A PRUEBA LO QUE SABES</p>
+        <h2>¿Cuánto sabes sobre bienestar?</h2>
+        <p>
+            Responde estas preguntas y descubre cuánto sabes sobre
+            cómo cuidar tu cuerpo, tu mente y tus emociones.
+        </p>
+    </div>
+
+    <form id="quizForm">
+
+        <!-- PREGUNTA 1 -->
+        <div class="pregunta">
+            <h3>1. ¿Qué es importante para cuidar tu bienestar físico?</h3>
+
+            <label>
+                <input type="radio" name="p1" value="a">
+                Dormir lo suficiente y tomar agua.
+            </label>
+
+            <label>
+                <input type="radio" name="p1" value="b">
+                No descansar nunca.
+            </label>
+
+            <label>
+                <input type="radio" name="p1" value="c">
+                Ignorar las necesidades de tu cuerpo.
+            </label>
+        </div>
+
+        <!-- PREGUNTA 2 -->
+        <div class="pregunta">
+            <h3>2. ¿Qué puedes hacer cuando te sientes triste o preocupado?</h3>
+
+            <label>
+                <input type="radio" name="p2" value="a">
+                Guardarte todo y no hablar con nadie.
+            </label>
+
+            <label>
+                <input type="radio" name="p2" value="b">
+                Hablar con alguien de confianza.
+            </label>
+
+            <label>
+                <input type="radio" name="p2" value="c">
+                Fingir que nunca sientes nada.
+            </label>
+        </div>
+
+        <!-- PREGUNTA 3 -->
+        <div class="pregunta">
+            <h3>3. ¿Cuál es un ejemplo de bienestar mental?</h3>
+
+            <label>
+                <input type="radio" name="p3" value="a">
+                Hacer todas las tareas sin descansar.
+            </label>
+
+            <label>
+                <input type="radio" name="p3" value="b">
+                Preocuparte por todo al mismo tiempo.
+            </label>
+
+            <label>
+                <input type="radio" name="p3" value="c">
+                Organizar tus actividades y tomar descansos.
+            </label>
+        </div>
+
+        <!-- PREGUNTA 4 -->
+        <div class="pregunta">
+            <h3>4. ¿Qué significa reconocer tus emociones?</h3>
+
+            <label>
+                <input type="radio" name="p4" value="a">
+                Identificar lo que sientes y expresarlo de forma saludable.
+            </label>
+
+            <label>
+                <input type="radio" name="p4" value="b">
+                Evitar sentir cualquier emoción.
+            </label>
+
+            <label>
+                <input type="radio" name="p4" value="c">
+                Enojarte contigo por sentir tristeza.
+            </label>
+        </div>
+
+        <!-- PREGUNTA 5 -->
+        <div class="pregunta">
+            <h3>5. ¿Qué es una red de apoyo?</h3>
+
+            <label>
+                <input type="radio" name="p5" value="a">
+                Un grupo que siempre está de acuerdo contigo.
+            </label>
+
+            <label>
+                <input type="radio" name="p5" value="b">
+                Personas de confianza que pueden escucharte y orientarte.
+            </label>
+
+            <label>
+                <input type="radio" name="p5" value="c">
+                Personas a las que nunca puedes contarles tus problemas.
+            </label>
+        </div>
+
+        <!-- PREGUNTA 6 -->
+        <div class="pregunta">
+            <h3>6. ¿Qué debes hacer si necesitas ayuda con un problema?</h3>
+
+            <label>
+                <input type="radio" name="p6" value="a">
+                Pensar que tienes que resolverlo todo a solas.
+            </label>
+
+            <label>
+                <input type="radio" name="p6" value="b">
+                Ignorar el problema para siempre.
+            </label>
+
+            <label>
+                <input type="radio" name="p6" value="c">
+                Buscar a una persona de confianza o un orientador.
+            </label>
+        </div>
+
+        <button type="submit" class="boton-quiz">
+            Ver mis resultados 
+        </button>
+
+    </form>
+
+    <div id="resultadoQuiz" class="resultado-quiz" aria-live="polite"></div>
+
+    <button type="button" id="reiniciarQuiz" class="boton-quiz"
+        hidden>
+        Volver a intentarlo ↻
+    </button>
+
+</section>
+
+
+<!-- FUNCIONAMIENTO DEL QUIZ -->
+
+<script>
+    const quizForm = document.getElementById("quizForm");
+    const resultadoQuiz = document.getElementById("resultadoQuiz");
+    const reiniciarQuiz = document.getElementById("reiniciarQuiz");
+
+    const respuestasCorrectas = {
+        p1: "a",
+        p2: "b",
+        p3: "c",
+        p4: "a",
+        p5: "b",
+        p6: "c"
+    };
+
+    quizForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const totalPreguntas = Object.keys(respuestasCorrectas).length;
+        let puntos = 0;
+        let sinResponder = 0;
+
+        for (const pregunta in respuestasCorrectas) {
+            const respuesta = quizForm.querySelector(
+                'input[name="' + pregunta + '"]:checked'
+            );
+
+            if (!respuesta) {
+                sinResponder++;
+            } else if (respuesta.value === respuestasCorrectas[pregunta]) {
+                puntos++;
+            }
+        }
+
+        if (sinResponder > 0) {
+            resultadoQuiz.textContent =
+                "Te faltan " + sinResponder +
+                " pregunta(s) por responder. 💜";
+            return;
+        }
+
+        let mensaje = "";
+
+        if (puntos === 6) {
+            mensaje = "¡Excelente! Sabes mucho sobre bienestar.";
+        } else if (puntos >= 4) {
+            mensaje = "¡Muy bien! Vas aprendiendo a cuidar tu bienestar.";
+        } else {
+            mensaje = "¡Sigue aprendiendo! Cada respuesta es una oportunidad para conocer más.";
+        }
+
+        resultadoQuiz.innerHTML =
+            "<h3>Tu resultado: " + puntos + " de " +
+            totalPreguntas + "</h3><p>" + mensaje + "</p>";
+
+        reiniciarQuiz.hidden = false;
+        resultadoQuiz.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+    });
+
+    reiniciarQuiz.addEventListener("click", function() {
+        quizForm.reset();
+        resultadoQuiz.textContent = "";
+        reiniciarQuiz.hidden = true;
+    });
+</script>
+
+
+<!-- NUEVAS SECCIONES DE BIENESTAR -->
+
+<!-- 1. AUTOESTIMA -->
+<section class="tema-extra">
+
+    <div class="extra-imagen">
+        <img src="img/autoestimayp.png" alt="Autoestima y amor propio">
+    </div>
+
+    <div class="extra-contenido">
+        <p class="etiqueta">QUIÉRETE Y RESPÉTATE</p>
+        <h2>Autoestima y amor propio</h2>
+
+        <p>
+            La autoestima es la forma en que nos valoramos y reconocemos
+            nuestras cualidades. Aprender a tratarnos con respeto nos
+            ayuda a construir una relación más saludable con nosotros mismos.
+        </p>
+
+        <ul>
+            <li>Reconoce tus cualidades y habilidades.</li>
+            <li>No te compares constantemente con otras personas.</li>
+            <li>Acepta que puedes equivocarte y seguir aprendiendo.</li>
+            <li>Habla contigo mismo con amabilidad.</li>
+        </ul>
+    </div>
+
+</section>
+
+
+<!-- 2. IMPORTANCIA DEL DESCANSO -->
+<section class="tema-extra">
+
+    <div class="extra-imagen">
+        <img src="img/descanso.jpg" alt="Descanso y bienestar">
+    </div>
+
+    <div class="extra-contenido">
+        <p class="etiqueta">DATE UN RESPIRO</p>
+        <h2>La importancia del descanso</h2>
+
+        <p>
+            Descansar es una parte importante del bienestar. Dormir
+            lo suficiente y hacer pausas durante el día puede ayudarnos
+            a recuperar energía y mantener la atención en nuestras actividades.
+        </p>
+
+        <ul>
+            <li>Intenta mantener horarios regulares para dormir.</li>
+            <li>Haz pausas cuando estudies durante mucho tiempo.</li>
+            <li>Busca un ambiente tranquilo para descansar.</li>
+            <li>Dedica tiempo a actividades que te relajen.</li>
+        </ul>
+    </div>
+
+</section>
+
+
+<!-- 3. RETOS DE BIENESTAR -->
+<section class="retos-bienestar">
+
+    <p class="etiqueta">PEQUEÑOS PASOS, GRANDES APRENDIZAJES</p>
+
+    <h2>🎯Mis pequeños retos de bienestar</h2>
+
+    <p>
+        Elige un reto para intentar hoy. No necesitas hacerlos todos:
+        cada pequeño paso cuenta.
+    </p>
+
+    <div class="retos-grid">
+
+        <label class="reto-card">
+            <input type="checkbox">
+            <span>💧</span>
+            <h3>Tomar agua</h3>
+            <p>Recordar tomar agua durante el día.</p>
+        </label>
+
+        <label class="reto-card">
+            <input type="checkbox">
+            <span>📚</span>
+            <h3>Organizarme</h3>
+            <p>Ordenar mis pendientes y empezar por uno.</p>
+        </label>
+
+        <label class="reto-card">
+            <input type="checkbox">
+            <span>💜</span>
+            <h3>Ser amable conmigo</h3>
+            <p>Reconocer algo que hice bien hoy.</p>
+        </label>
+
+    </div>
+
+    <p class="mensaje-retos">
+        Cada pequeño avance merece ser reconocido. 🌷
+    </p>
+
+</section>
+
+<section class="herramienta">
+    <h2>🌧️ Pausa sonora</h2>
+
+    <p>
+        Escucha el sonido relajante de la lluvia durante tu pausa.
+        Mantén el volumen bajo y deténlo cuando quieras.
+    </p>
+
+    <audio id="sonidoLluvia" loop>
+        <source src="audio/liecio-calming-rain-257596.mp3"
+                type="audio/mpeg">
+        Tu navegador no admite audio.
+    </audio>
+
+    <button type="button" id="iniciarSonido" class="boton-extra">
+        Reproducir sonido de lluvia ♪
+    </button>
+
+    <button type="button" id="detenerSonido"
+            class="boton-extra secundario">
+        Detener sonido
+    </button>
+
+    <p id="estadoSonido" aria-live="polite">
+        El sonido está apagado.
+    </p>
+</section>
+
+
+<!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 XIMENAEDEL. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

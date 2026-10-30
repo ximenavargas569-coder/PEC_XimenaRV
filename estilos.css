@@ -1,0 +1,1691 @@
+/* ==============================
+   REDES DE BIENESTAR
+   PROYECTO ESCOLAR COMUNITARIO
+   ============================== */
+
+
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f5f3fa;
+
+    color: #30303a;
+
+    line-height: 1.6;
+}
+
+
+.contenedor {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+
+/* ==============================
+   ENCABEZADO
+   ============================== */
+
+header {
+
+    background-color: white;
+
+    border-bottom: 1px solid #ddd8e8;
+
+    padding-top: 25px;
+}
+
+
+header h1 {
+
+    color: #5b3f8c;
+
+    font-size: 32px;
+
+    margin-bottom: 3px;
+}
+
+
+.subtitulo {
+
+    color: #777080;
+
+    margin-bottom: 20px;
+}
+
+
+
+/* MENÚ */
+
+nav {
+
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+}
+
+
+nav a {
+
+    text-decoration: none;
+
+    color: #4c4058;
+
+    padding: 10px 18px;
+
+    border-radius: 8px 8px 0 0;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+
+    background-color: #eee7f7;
+
+    color: #5b3f8c;
+}
+
+
+nav a.activo {
+
+    background-color: #e9e0f7;
+
+    color: #5b3f8c;
+
+    font-weight: bold;
+}
+
+
+
+/* ==============================
+   PÁGINA PRINCIPAL
+   ============================== */
+
+.hero {
+
+    margin: 45px 0 35px;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    display: grid;
+
+    grid-template-columns: 1.3fr 1fr;
+
+    gap: 30px;
+
+    align-items: center;
+
+    box-shadow: 0 4px 18px rgba(70, 50, 90, 0.08);
+}
+
+
+.hero h2 {
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    color: #3e3150;
+
+    margin: 8px 0 15px;
+}
+
+
+.etiqueta {
+
+    color: #7654a7;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+
+/* BOTÓN */
+
+.boton {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    background-color: #6d4ba3;
+
+    color: white;
+
+    padding: 11px 20px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.boton:hover {
+
+    background-color: #55387f;
+}
+
+
+
+/* ==============================
+   IMÁGENES
+   ============================== */
+
+.imagen {
+
+    width: 100%;
+
+    height: 250px;
+
+    border: 2px dashed #b9a7d3;
+
+    border-radius: 15px;
+
+    background-color: #faf8fd;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.imagen img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.grande {
+
+    height: 320px;
+}
+
+
+
+/* ==============================
+   TARJETAS
+   ============================== */
+
+.tarjetas {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 35px;
+}
+
+
+.tarjeta {
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    border: 1px solid #e5dfed;
+
+    transition: 0.3s;
+}
+
+
+.tarjeta:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 5px 15px rgba(70, 50, 90, 0.10);
+}
+
+
+.icono {
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+
+.tarjeta h3 {
+
+    color: #5b3f8c;
+
+    margin-bottom: 5px;
+}
+
+
+
+/* ==============================
+   SECCIONES
+   ============================== */
+
+.seccion-suave {
+
+    background-color: #ebe4f5;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    margin: 35px 0;
+}
+
+
+.seccion-suave h2 {
+
+    color: #503773;
+
+    margin-bottom: 8px;
+}
+
+
+
+/* ==============================
+   ENCABEZADO DE LAS PÁGINAS
+   ============================== */
+
+.encabezado-pagina {
+
+    padding: 45px 0 25px;
+
+    max-width: 800px;
+}
+
+
+.encabezado-pagina h2 {
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    color: #3e3150;
+
+    margin: 8px 0 15px;
+}
+
+
+
+/* ==============================
+   DOS COLUMNAS
+   ============================== */
+
+.dos-columnas {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 17px;
+
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 30px;
+
+    align-items: center;
+
+    box-shadow: 0 4px 18px rgba(70, 50, 90, 0.06);
+}
+
+
+.contenido h2 {
+
+    color: #4d3867;
+
+    margin-bottom: 18px;
+}
+
+
+
+/* LISTA */
+
+.lista > div {
+
+    display: flex;
+
+    gap: 14px;
+
+    margin-bottom: 15px;
+}
+
+
+.lista span {
+
+    min-width: 35px;
+
+    height: 35px;
+
+    border-radius: 50%;
+
+    background-color: #e9e0f7;
+
+    color: #5b3f8c;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+
+
+/* ==============================
+   AVISO
+   ============================== */
+
+.aviso {
+
+    margin: 25px 0;
+
+    background-color: #f1e9fb;
+
+    border-left: 5px solid #7654a7;
+
+    padding: 22px;
+
+    border-radius: 8px;
+}
+
+
+.aviso h3 {
+
+    color: #5b3f8c;
+
+    margin-bottom: 5px;
+}
+
+
+
+/* ==============================
+   ACTIVIDADES
+   ============================== */
+
+.actividades-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.actividad {
+
+    background-color: white;
+
+    border: 1px solid #e5dfed;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+
+.actividad:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 5px 15px rgba(70, 50, 90, 0.10);
+}
+
+
+.numero {
+
+    width: 38px;
+
+    height: 38px;
+
+    background-color: #6d4ba3;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.actividad h3 {
+
+    color: #4d3867;
+
+    margin-bottom: 6px;
+}
+
+
+
+/* ==============================
+   GALERÍA
+   ============================== */
+
+.galeria {
+
+    margin: 35px 0;
+}
+
+
+.galeria h2 {
+
+    color: #4d3867;
+
+    margin-bottom: 18px;
+}
+
+
+.galeria-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.foto {
+
+    height: 220px;
+
+    background-color: #faf8fd;
+
+    border: 2px dashed #b9a7d3;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+
+.foto img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/* ==============================
+   PASOS
+   ============================== */
+
+.pasos {
+
+    background-color: white;
+
+    padding: 28px;
+
+    border-radius: 15px;
+
+    margin: 35px 0;
+}
+
+
+.pasos h2 {
+
+    color: #4d3867;
+
+    margin-bottom: 15px;
+}
+
+
+.pasos ol {
+
+    padding-left: 22px;
+}
+
+
+.pasos li {
+
+    margin: 8px 0;
+}
+
+
+
+/* ==============================
+   PIE DE PÁGINA
+   ============================== */
+
+footer {
+
+    margin-top: 50px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: #3e3150;
+
+    color: #eee8f5;
+}
+
+
+
+/* ==============================
+   DISEÑO PARA CELULAR
+   ============================== */
+
+@media (max-width: 750px) {
+
+
+    .hero {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .dos-columnas {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .tarjetas {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .actividades-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .galeria-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero h2 {
+
+        font-size: 28px;
+    }
+
+
+    .encabezado-pagina h2 {
+
+        font-size: 28px;
+    }
+
+
+    nav a {
+
+        padding: 9px 12px;
+    }
+
+}
+
+
+/* VIDEOS DE YOUTUBE */
+
+.videos {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.videos > h2 {
+    color: #5b3f8c;
+    font-size: 30px;
+    margin: 8px 0;
+}
+
+.descripcion-videos {
+    color: #6d6575;
+    margin-bottom: 25px;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.video-card {
+    background-color: white;
+    border: 1px solid #e5dfed;
+    border-radius: 15px;
+    padding: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(70, 50, 90, 0.08);
+}
+
+.video-card iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+    border: none;
+    border-radius: 10px;
+}
+
+.video-card h3 {
+    color: #5b3f8c;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.video-card p {
+    color: #6d6575;
+    font-size: 14px;
+}
+
+/* ADAPTACIÓN A PANTALLAS PEQUEÑAS */
+
+@media (max-width: 750px) {
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 1000px) {
+    .videos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* QUIZ DE BIENESTAR 💜 */
+
+.quiz-bienestar {
+    background-color: #fff;
+    border: 1px solid #e5dfed;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 45px 0;
+    box-shadow: 0 5px 20px rgba(70, 50, 90, 0.08);
+}
+
+.quiz-encabezado {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.quiz-encabezado h2 {
+    color: #5b3f8c;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.quiz-encabezado p {
+    color: #6d6575;
+}
+
+.pregunta {
+    background-color: #faf8fd;
+    border: 1px solid #e5dfed;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.pregunta h3 {
+    color: #503773;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.pregunta label {
+    display: block;
+    background-color: white;
+    border: 1px solid #e5dfed;
+    border-radius: 9px;
+    padding: 12px;
+    margin: 9px 0;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #51485a;
+}
+
+.pregunta label:hover {
+    background-color: #eee7f7;
+    border-color: #b9a2d8;
+}
+
+.pregunta input[type="radio"] {
+    accent-color: #6d4ba3;
+    margin-right: 8px;
+}
+
+.boton-quiz {
+    display: block;
+    background-color: #6d4ba3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 22px;
+    font-size: 16px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-quiz:hover {
+    background-color: #503773;
+    transform: translateY(-2px);
+}
+
+.resultado-quiz {
+    background-color: #f1e9fb;
+    border: 1px solid #d8c8ed;
+    border-radius: 14px;
+    padding: 20px;
+    margin-top: 25px;
+    text-align: center;
+    color: #51485a;
+}
+
+.resultado-quiz:empty {
+    display: none;
+}
+
+.resultado-quiz h3 {
+    color: #5b3f8c;
+    margin-bottom: 8px;
+}
+
+#reiniciarQuiz[hidden] {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    .quiz-bienestar {
+        padding: 18px;
+    }
+
+    .quiz-encabezado h2 {
+        font-size: 24px;
+    }
+
+    .pregunta {
+        padding: 15px;
+    }
+}
+
+
+/* HERRAMIENTAS INTERACTIVAS 💜 */
+
+.herramienta {
+    background: white;
+    border: 1px solid #e5dfed;
+    border-radius: 18px;
+    padding: 28px;
+    margin: 30px 0;
+    box-shadow: 0 4px 16px rgba(70, 50, 90, 0.07);
+    animation: aparecer 0.6s ease both;
+}
+
+.herramienta h2 {
+    color: #5b3f8c;
+    margin-bottom: 12px;
+}
+
+.herramienta > p {
+    color: #6d6575;
+    line-height: 1.7;
+}
+
+.opciones-emocion,
+.rutina-grid,
+.mitos-grid,
+.galeria-positiva {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.emocion,
+.mini-tarjeta,
+.tarjeta-mito {
+    background: #faf8fd;
+    border: 1px solid #e5dfed;
+    border-radius: 12px;
+    padding: 16px;
+    color: #51485a;
+}
+
+.emocion {
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.emocion:hover,
+.emocion.seleccionada {
+    background: #eee5fa;
+    border-color: #a58acb;
+    transform: translateY(-2px);
+}
+
+.respuesta-interactiva {
+    margin-top: 16px;
+    font-weight: bold;
+    color: #5b3f8c !important;
+}
+
+.lista-habitos {
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.lista-habitos label {
+    background: #faf8fd;
+    padding: 12px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.lista-habitos input {
+    accent-color: #6d4ba3;
+    margin-right: 8px;
+}
+
+.barra-progreso {
+    height: 12px;
+    border-radius: 20px;
+    background: #e9e0f7;
+    overflow: hidden;
+    margin: 12px 0;
+}
+
+#barraHabitos {
+    height: 100%;
+    width: 0%;
+    background: #8b6bb1;
+    border-radius: 20px;
+    transition: width 0.3s;
+}
+
+.boton-extra {
+    background: #6d4ba3;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 11px 17px;
+    margin: 8px 6px 0 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.boton-extra:hover {
+    background: #503773;
+    transform: translateY(-2px);
+}
+
+.boton-extra.secundario {
+    background: #eee7f7;
+    color: #503773;
+}
+
+.tarjeta-frase {
+    background: linear-gradient(135deg, #f4edfc, #fff);
+    text-align: center;
+}
+
+#frasePositiva {
+    font-size: 19px;
+    color: #5b3f8c;
+    margin: 20px 0;
+}
+
+.circulo-respiracion {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 25px auto;
+    background: linear-gradient(135deg, #d9c7f3, #a58acb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #3e3150;
+    font-weight: bold;
+}
+
+.circulo-respiracion.activo {
+    animation: respirar 8s ease-in-out infinite;
+}
+
+.mini-tarjeta h3 {
+    color: #5b3f8c;
+    margin-bottom: 8px;
+}
+
+.mini-tarjeta p {
+    color: #6d6575;
+    line-height: 1.6;
+}
+
+.detalle-bienestar {
+    background: #faf8fd;
+    border: 1px solid #e5dfed;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 12px;
+}
+
+.detalle-bienestar summary {
+    color: #5b3f8c;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.detalle-bienestar p {
+    margin-top: 12px;
+    color: #6d6575;
+}
+
+.tarjeta-mito {
+    text-align: left;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.tarjeta-mito strong,
+.tarjeta-mito span {
+    display: block;
+}
+
+.tarjeta-mito strong {
+    color: #503773;
+    margin-bottom: 12px;
+}
+
+.tarjeta-mito span {
+    color: #7654a7;
+    font-size: 13px;
+}
+
+.respuesta-mito {
+    display: none;
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+.tarjeta-mito.abierto {
+    background: #eee7f7;
+}
+
+.tarjeta-mito.abierto .respuesta-mito {
+    display: block;
+}
+
+.campo-extra {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    padding: 12px;
+    border: 1px solid #d8c8ed;
+    border-radius: 9px;
+    margin: 10px 0;
+    font: inherit;
+}
+
+.calendario-habitos {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.dia-habito {
+    min-width: 0;
+    min-height: 58px;
+    border: 1px solid #e5dfed;
+    border-radius: 9px;
+    background: #faf8fd;
+    color: #51485a;
+    cursor: pointer;
+}
+
+.dia-habito.marcado {
+    background: #d9c7f3;
+    border-color: #8b6bb1;
+    color: #3e3150;
+    font-weight: bold;
+}
+
+.galeria-positiva {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.galeria-positiva figure {
+    overflow: hidden;
+    border-radius: 12px;
+    background: #faf8fd;
+    border: 1px solid #e5dfed;
+}
+
+.galeria-positiva img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.galeria-positiva figure:hover img {
+    transform: scale(1.04);
+}
+
+.galeria-positiva figcaption {
+    padding: 12px;
+    color: #5b3f8c;
+    font-size: 14px;
+}
+
+#volverArriba {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #6d4ba3;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0 3px 12px #0002;
+    display: none;
+    z-index: 1000;
+}
+
+#volverArriba.visible {
+    display: block;
+}
+
+.boton-tema {
+    position: fixed;
+    bottom: 22px;
+    left: 15px;
+    z-index: 1000;
+    border: 1px solid #d8c8ed;
+    border-radius: 20px;
+    padding: 10px 13px;
+    background: #eee7f7;
+    color: #503773;
+    cursor: pointer;
+}
+
+body.modo-oscuro {
+    background: #211c2a;
+    color: #f4eefb;
+}
+
+body.modo-oscuro header,
+body.modo-oscuro .herramienta,
+body.modo-oscuro .tarjeta,
+body.modo-oscuro .mini-tarjeta,
+body.modo-oscuro .video-card {
+    background: #30283c;
+    color: #f4eefb;
+    border-color: #51435f;
+}
+
+body.modo-oscuro .herramienta h2,
+body.modo-oscuro .mini-tarjeta h3,
+body.modo-oscuro .video-card h3 {
+    color: #d9c7f3;
+}
+
+body.modo-oscuro .herramienta p,
+body.modo-oscuro .mini-tarjeta p,
+body.modo-oscuro .video-card p {
+    color: #e1d8eb;
+}
+
+body.modo-oscuro .pregunta,
+body.modo-oscuro .detalle-bienestar,
+body.modo-oscuro .lista-habitos label,
+body.modo-oscuro .emocion,
+body.modo-oscuro .tarjeta-mito,
+body.modo-oscuro .dia-habito {
+    background: #3a3047;
+    color: #f4eefb;
+    border-color: #51435f;
+}
+
+body.modo-oscuro .pregunta h3,
+body.modo-oscuro .tarjeta-mito strong {
+    color: #e2d2fb;
+}
+
+body.modo-oscuro .campo-extra {
+    background: #30283c;
+    color: white;
+    border-color: #79658f;
+}
+
+@keyframes respirar {
+    0%, 100% { transform: scale(0.85); }
+    50% { transform: scale(1.15); }
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 750px) {
+    .herramienta {
+        padding: 18px;
+    }
+
+    .opciones-emocion,
+    .rutina-grid,
+    .mitos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-positiva {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-positiva img {
+        height: 220px;
+    }
+
+    .calendario-habitos {
+        gap: 4px;
+    }
+
+    .dia-habito {
+        font-size: 12px;
+        min-height: 45px;
+    }
+
+    .boton-tema {
+        bottom: 12px;
+        left: 10px;
+    }
+
+    #volverArriba {
+        bottom: 12px;
+        right: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .herramienta {
+        animation: none;
+    }
+
+    .circulo-respiracion.activo {
+        animation: none;
+    }
+
+    * {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+
+/* NUEVAS SECCIONES DE BIENESTAR 💜 */
+
+.tema-extra {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 28px;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #e5dfed;
+    border-radius: 18px;
+    padding: 25px;
+    margin: 30px 0;
+    box-shadow: 0 4px 16px rgba(70, 50, 90, 0.07);
+}
+
+.extra-imagen {
+    width: 100%;
+    height: 280px;
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: #eee7f7;
+}
+
+.extra-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.extra-contenido h2 {
+    color: #5b3f8c;
+    margin: 8px 0 12px;
+}
+
+.extra-contenido p,
+.extra-contenido li {
+    color: #62596b;
+    line-height: 1.7;
+}
+
+.extra-contenido ul {
+    padding-left: 22px;
+    margin-top: 12px;
+}
+
+.retos-bienestar {
+    background-color: #f1e9fb;
+    border: 1px solid #d8c8ed;
+    border-radius: 18px;
+    padding: 30px;
+    margin: 35px 0;
+    text-align: center;
+}
+
+.retos-bienestar h2 {
+    color: #5b3f8c;
+    margin: 8px 0;
+}
+
+.retos-bienestar > p {
+    color: #62596b;
+}
+
+.retos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.reto-card {
+    display: block;
+    position: relative;
+    background-color: white;
+    border: 1px solid #e5dfed;
+    border-radius: 14px;
+    padding: 20px 14px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.reto-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(70, 50, 90, 0.10);
+}
+
+.reto-card input {
+    accent-color: #6d4ba3;
+}
+
+.reto-card span {
+    display: block;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.reto-card h3 {
+    color: #5b3f8c;
+    margin-bottom: 8px;
+}
+
+.reto-card p {
+    color: #62596b;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.reto-card:has(input:checked) {
+    border: 2px solid #8b6bb1;
+    background-color: #faf7ff;
+}
+
+.mensaje-retos {
+    margin-top: 22px;
+    font-weight: bold;
+}
+
+body.modo-oscuro .tema-extra {
+    background-color: #30283c;
+    border-color: #51435f;
+}
+
+body.modo-oscuro .extra-contenido p,
+body.modo-oscuro .extra-contenido li {
+    color: #e1d8eb;
+}
+
+body.modo-oscuro .retos-bienestar {
+    background-color: #30283c;
+    border-color: #51435f;
+}
+
+body.modo-oscuro .reto-card {
+    background-color: #3a3047;
+    border-color: #51435f;
+}
+
+body.modo-oscuro .reto-card h3,
+body.modo-oscuro .reto-card p {
+    color: #f4eefb;
+}
+
+@media (max-width: 750px) {
+    .tema-extra {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    .extra-imagen {
+        height: 220px;
+    }
+
+    .retos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .retos-bienestar {
+        padding: 20px;
+    }
+}
+
+.actividad-extra {
+    background-color: #f7f2fc;
+    border: 1px solid #dfd0ef;
+    border-radius: 18px;
+    padding: 28px;
+    margin: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(70, 50, 90, 0.08);
+}
+
+.actividad-extra h2 {
+    color: #5b3f8c;
+    margin-bottom: 12px;
+}
+
+.actividad-extra p {
+    color: #62596b;
+    line-height: 1.6;
+}
+
+.pregunta-actividad {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 400px;
+    margin: 18px auto;
+    text-align: left;
+}
+
+.pregunta-actividad label {
+    color: #5b3f8c;
+    font-weight: bold;
+}
+
+.actividad-extra select,
+.actividad-extra input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cdbbe2;
+    border-radius: 10px;
+    background-color: white;
+    color: #40354d;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.actividad-extra .boton {
+    margin-top: 15px;
+}
+
+#actividad-sorpresa {
+    background-color: white;
+    color: #5b3f8c;
+    border-radius: 12px;
+    padding: 22px;
+    margin: 20px auto;
+    max-width: 500px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#resultado-emociones,
+#mostrar-meta {
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+@media (max-width: 600px) {
+    .actividad-extra {
+        padding: 20px;
+    }
+}
+
+body.modo-oscuro .actividad-extra {
+    background-color: #30283c;
+    border-color: #51435f;
+}
+
+body.modo-oscuro .actividad-extra h2,
+body.modo-oscuro .actividad-extra p,
+body.modo-oscuro .pregunta-actividad label {
+    color: #eee5f8;
+}
+
+body.modo-oscuro #actividad-sorpresa {
+    background-color: #3a3047;
+    color: #f4eefb;
+}
+
+
+.boton-flotante,
+.boton-volver {
+    position: fixed;
+    right: 20px;
+    z-index: 999;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background-color: #6d4ba3;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.boton-flotante {
+    bottom: 85px;
+}
+
+.boton-volver {
+    bottom: 25px;
+    display: none;
+}
+
+.boton-flotante:hover,
+.boton-volver:hover {
+    background-color: #8b6bb1;
+    transform: scale(1.08);
+}
+
+body.modo-oscuro {
+    background-color: #211b29;
+    color: #f4eefb;
+}
+
+body.modo-oscuro main {
+    color: #f4eefb;
+}
+
+body.modo-oscuro section,
+body.modo-oscuro .tarjeta,
+body.modo-oscuro .actividad-extra {
+    background-color: #30283c;
+    color: #f4eefb;
+}
+
+
+.videos-bienestar {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.videos-bienestar h2 {
+    color: #5b3f8c;
+    margin-bottom: 10px;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 25px;
+}
+
+.video-card {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #e5dfed;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(70, 50, 90, 0.10);
+    transition: transform 0.25s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-card a {
+    display: block;
+    position: relative;
+}
+
+.video-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.icono-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    width: 58px;
+    height: 42px;
+    border-radius: 12px;
+    background-color: rgba(109, 75, 163, 0.95);
+    color: white;
+    font-size: 23px;
+    transition: transform 0.2s;
+}
+
+.video-card a:hover .icono-play {
+    transform: translate(-50%, -50%) scale(1.12);
+}
+
+.video-card h3 {
+    color: #5b3f8c;
+    margin: 18px 12px 8px;
+}
+
+.video-card p {
+    color: #62596b;
+    line-height: 1.6;
+    padding: 0 15px 18px;
+}
+
+body.modo-oscuro .video-card {
+    background-color: #30283c;
+    border-color: #51435f;
+}
+
+body.modo-oscuro .video-card h3,
+body.modo-oscuro .video-card p,
+body.modo-oscuro .videos-bienestar h2 {
+    color: #f4eefb;
+}
+
+@media (max-width: 800px) {
+    .videos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 550px) {
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+body {
+    cursor: url("img/cursor.png") 2 2, auto;
+}
+
+a,
+.boton {
+    cursor: url("img/cursor.png") 2 2, pointer;
+}

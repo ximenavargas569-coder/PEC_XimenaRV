@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<script src="funciones.js" defer></script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Redes de Bienestar</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+ <!-- ENCABEZADO -->
+
+    <header>
+
+        <div class="contenedor">
+
+            <h1>Redes de Bienestar</h1>
+
+            <p class="subtitulo">
+                Tejiendo por la salud mental y el éxito escolar
+            </p>
+
+            <!-- MENÚ -->
+
+            <nav>
+
+                <a href="index.html" class="activo">
+                    Inicio
+                </a>
+
+                <a href="bienestar.html">
+                    Bienestar
+                </a>
+
+                <a href="actividades.html">
+                    Actividades
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <main class="contenedor">
+
+        <section class="hero">
+
+            <div class="hero-texto">
+
+                <p class="etiqueta">
+                    PROYECTO ESCOLAR COMUNITARIO
+                </p>
+
+                <h2>
+                    Tu bienestar también forma parte de tu aprendizaje.
+                </h2>
+
+                <p>
+                    En la escuela no solamente aprendemos materias.
+                    También enfrentamos preocupaciones, presión,
+                    cansancio y situaciones que pueden afectar nuestra
+                    forma de estudiar y convivir.
+                </p>
+
+                <a href="bienestar.html" class="boton">
+                    Conocer más
+                </a>
+
+            </div>
+
+
+            <!-- IMAGEN -->
+
+            <div class="imagen">
+
+                <img src="img/bienestarescolar.jpg"
+                     alt="Imagen sobre bienestar escolar">
+
+            </div>
+
+        </section>
+
+
+        <!-- TARJETAS -->
+
+        <section class="tarjetas">
+
+            <div class="tarjeta">
+
+                <div class="icono">
+                    🧠
+                </div>
+
+                <h3>
+                    Salud mental
+                </h3>
+
+                <p>
+                    Reconocer lo que sentimos puede ayudarnos
+                    a buscar apoyo a tiempo.
+                </p>
+
+            </div>
+
+
+            <div class="tarjeta">
+
+                <div class="icono">
+                    📚
+                </div>
+
+                <h3>
+                    Éxito escolar
+                </h3>
+
+                <p>
+                    Sentirnos bien también puede facilitar
+                    la concentración y la participación.
+                </p>
+
+            </div>
+
+
+            <div class="tarjeta">
+
+                <div class="icono">
+                    🤝
+                </div>
+
+                <h3>
+                    Red de apoyo
+                </h3>
+
+                <p>
+                    Familia, amistades, docentes y orientación
+                    escolar pueden acompañarnos.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFORMACIÓN -->
+
+        <section class="seccion-suave">
+
+            <h2>
+                ¿Por qué es importante hablar del tema?
+            </h2>
+
+            <p>
+                Una comunidad escolar que escucha y acompaña
+                puede ayudar a que los estudiantes no tengan
+                que enfrentar sus problemas solos.
+            </p>
+
+            <p>
+                Pedir ayuda no es una debilidad, sino una forma
+                de cuidarnos y buscar soluciones.
+            </p>
+
+        </section>
+
+    </main>
+
+
+<!-- HERRAMIENTAS DE BIENESTAR -->
+
+<section class="herramienta">
+    <p class="etiqueta">UN MOMENTO PARA TI</p>
+    <h2>¿Cómo te sientes hoy?</h2>
+    <p>Elige la opción que mejor describa cómo te sientes.</p>
+
+    <div class="opciones-emocion">
+        <button type="button" class="emocion" data-mensaje="¡Qué bueno! Disfruta este momento y compártelo con alguien si quieres.">😊 Feliz</button>
+        <button type="button" class="emocion" data-mensaje="Está bien no tenerlo todo claro. Ve poco a poco y date tiempo.">😐 Normal</button>
+        <button type="button" class="emocion" data-mensaje="No tienes que resolver todo ahora. Puedes hablar con alguien de confianza.">😔 Triste</button>
+        <button type="button" class="emocion" data-mensaje="Haz una pausa, respira con calma y busca apoyo si lo necesitas.">😟 Estresado/a</button>
+    </div>
+    <p id="mensajeEmocion" class="respuesta-interactiva" aria-live="polite"></p>
+</section>
+
+<section class="herramienta">
+    <h2>✅Mi checklist de bienestar</h2>
+    <p>Marca las actividades que hayas realizado hoy.</p>
+
+    <div class="lista-habitos">
+        <label><input type="checkbox"> Tomé agua durante el día.</label>
+        <label><input type="checkbox"> Tuve un momento para descansar.</label>
+        <label><input type="checkbox"> Organicé mis pendientes.</label>
+        <label><input type="checkbox"> Hice algo que disfruto.</label>
+        <label><input type="checkbox"> Hablé con alguien importante para mí.</label>
+    </div>
+
+    <p id="progresoHabitos">Has marcado 0 de 5 hábitos.</p>
+    <div class="barra-progreso"><div id="barraHabitos"></div></div>
+    <button type="button" id="reiniciarHabitos" class="boton-extra">Reiniciar checklist</button>
+</section>
+
+<section class="herramienta tarjeta-frase">
+    <h2>💌Un mensaje para ti</h2>
+    <p id="frasePositiva" aria-live="polite">Tu bienestar también merece tiempo y atención.</p>
+    <button type="button" id="nuevaFrase" class="boton-extra">Dame otro mensaje ✨</button>
+</section>
+
+<section class="herramienta">
+    <h2>Un momento para respirar</h2>
+    <p>Busca una postura cómoda y respira sin forzarte.</p>
+
+    <div id="circuloRespiracion" class="circulo-respiracion">
+        <span id="textoRespiracion">Prepárate</span>
+    </div>
+
+    <p id="instruccionRespiracion" aria-live="polite">Haz clic cuando quieras comenzar.</p>
+    <button type="button" id="iniciarRespiracion" class="boton-extra">Comenzar</button>
+    <button type="button" id="detenerRespiracion" class="boton-extra secundario">Detener</button>
+</section>
+
+<section class="herramienta">
+    <h2>📅Una rutina para estudiantes</h2>
+    <p>Una rutina flexible puede ayudarte a organizarte. Ajústala a tus horarios.</p>
+
+    <div class="rutina-grid">
+        <article class="mini-tarjeta">
+            <h3>🌞 Al comenzar el día</h3>
+            <p>Desayuna si puedes, prepara tus materiales y revisa tus pendientes.</p>
+        </article>
+        <article class="mini-tarjeta">
+            <h3>📚 Después de clases</h3>
+            <p>Descansa un poco, come y divide las tareas en partes pequeñas.</p>
+        </article>
+        <article class="mini-tarjeta">
+            <h3>🌷 En tu tiempo libre</h3>
+            <p>Dedica un rato a tus amistades, pasatiempos o actividades favoritas.</p>
+        </article>
+        <article class="mini-tarjeta">
+            <h3>🌙 Antes de dormir</h3>
+            <p>Prepara tus cosas para mañana e intenta mantener un horario de sueño.</p>
+        </article>
+    </div>
+</section>
+
+<section class="herramienta">
+    <h2>📚 ¿Cómo manejar el estrés escolar?</h2>
+
+    <details class="detalle-bienestar">
+        <summary>Tengo muchas tareas pendientes</summary>
+        <p>Anota lo que necesitas hacer, elige una tarea para empezar y divídela en pasos pequeños.</p>
+    </details>
+
+    <details class="detalle-bienestar">
+        <summary>Me pongo nervioso/a antes de un examen</summary>
+        <p>Repasa por partes, prepara tus materiales con anticipación y haz pausas para descansar.</p>
+    </details>
+
+    <details class="detalle-bienestar">
+        <summary>Siento que no me alcanza el tiempo</summary>
+        <p>Organiza tus prioridades y habla con tu maestro o un adulto de confianza si necesitas orientación.</p>
+    </details>
+</section>
+
+<section class="herramienta">
+    <h2>🤝 ¿Cómo apoyar a un amigo?</h2>
+
+    <div class="rutina-grid">
+        <article class="mini-tarjeta">
+            <h3>👂 Escucha</h3>
+            <p>Permite que se exprese sin burlas ni juicios.</p>
+        </article>
+        <article class="mini-tarjeta">
+            <h3>💜 Acompaña</h3>
+            <p>Pregúntale qué necesita y hazle saber que no está solo/a.</p>
+        </article>
+        <article class="mini-tarjeta">
+            <h3>🫶 Respeta</h3>
+            <p>No lo presiones para que cuente algo que no desea compartir.</p>
+        </article>
+        <article class="mini-tarjeta">
+            <h3>🙋 Busca ayuda</h3>
+            <p>Si te preocupa su seguridad, busca apoyo de un adulto de confianza.</p>
+        </article>
+    </div>
+</section>
+
+<section class="herramienta">
+    <h2>💡 Mitos y realidades sobre el bienestar</h2>
+    <p>Presiona cada tarjeta para descubrir la respuesta.</p>
+
+    <div class="mitos-grid">
+        <button type="button" class="tarjeta-mito">
+            <strong>“Pedir ayuda es una debilidad”.</strong>
+            <span>Ver respuesta +</span>
+            <p class="respuesta-mito">Es un mito. Pedir apoyo puede ser una decisión valiente y saludable.</p>
+        </button>
+
+        <button type="button" class="tarjeta-mito">
+            <strong>“Todas las personas sienten emociones difíciles”.</strong>
+            <span>Ver respuesta +</span>
+            <p class="respuesta-mito">Es una realidad. Sentir tristeza, preocupación o frustración forma parte de la vida.</p>
+        </button>
+
+        <button type="button" class="tarjeta-mito">
+            <strong>“Descansar también es importante para estudiar”.</strong>
+            <span>Ver respuesta +</span>
+            <p class="respuesta-mito">Es una realidad. Las pausas ayudan a recuperar la atención y la energía.</p>
+        </button>
+    </div>
+</section>
+
+<section class="herramienta">
+    <h2>📆 Mi calendario de hábitos</h2>
+    <p>Selecciona los días en los que quieras intentar mantener un hábito. Puedes cambiarlo cuando quieras.</p>
+
+    <label for="habitoElegido">Mi hábito:</label>
+    <input id="habitoElegido" class="campo-extra" type="text" maxlength="60" placeholder="Ej. Leer 10 minutos">
+
+    <div id="calendarioHabitos" class="calendario-habitos"></div>
+    <p id="resumenCalendario" aria-live="polite">Aún no has seleccionado días.</p>
+    <button type="button" id="limpiarCalendario" class="boton-extra secundario">Limpiar calendario</button>
+</section>
+
+<section class="herramienta">
+    <h2>Galería positiva</h2>
+    <p>Agrega imágenes que transmitan tranquilidad, esperanza o motivación.</p>
+
+    <div class="galeria-positiva">
+        <figure>
+            <img src="img/actividad1.webp" alt="Actividad positiva en la escuela" loading="lazy">
+            <figcaption>Pequeñas acciones también cuentan.</figcaption>
+        </figure>
+        <figure>
+            <img src="img/actividad2.jpg" alt="Actividad de bienestar" loading="lazy">
+            <figcaption>Crecer también significa aprender.</figcaption>
+        </figure>
+        <figure>
+            <img src="img/actividad3.jpg" alt="Convivencia y bienestar" loading="lazy">
+            <figcaption>Compartir nos conecta.</figcaption>
+        </figure>
+    </div>
+</section>
+
+
+<section class="herramienta">
+    <h2>🌧️ Pausa sonora</h2>
+
+    <p>
+        Escucha el sonido relajante de la lluvia durante tu pausa.
+        Mantén el volumen bajo y deténlo cuando quieras.
+    </p>
+
+    <audio id="sonidoLluvia" loop>
+        <source src="audio/liecio-calming-rain-257596.mp3"
+                type="audio/mpeg">
+        Tu navegador no admite audio.
+    </audio>
+
+    <button type="button" id="iniciarSonido" class="boton-extra">
+        Reproducir sonido de lluvia ♪
+    </button>
+
+    <button type="button" id="detenerSonido"
+            class="boton-extra secundario">
+        Detener sonido
+    </button>
+
+    <p id="estadoSonido" aria-live="polite">
+        El sonido está apagado.
+    </p>
+</section>
+
+
+<button type="button" id="volverArriba" aria-label="Volver arriba">↑</button>
+<button type="button" id="cambiarTema" class="boton-tema" aria-pressed="false">🌙 Modo oscuro</button>
+
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>
+            © 2026 XIMENAEDEL. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
